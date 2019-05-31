@@ -1,0 +1,23 @@
+{
+    "name": "ivan770/laravel-firestore-cache",
+    "description": "Cloud Firestore driver for Laravel cache",
+    "type": "library",
+    "require": {
+        "illuminate/cache": "^5.8",
+        "google/cloud-firestore": "^1.6",
+        "nesbot/carbon": "^2.18"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ivan770\\Firestore\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ivan770\\Firestore\\FirestoreServiceProvider"
+            ]
+        }
+    }
+}
